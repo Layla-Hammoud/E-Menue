@@ -1,0 +1,57 @@
+html {
+    /* To make use of full height of page*/
+    min-height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+}
+
+nav {
+    color: #F5EEDC;
+    padding: 20px 40px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #DD4A48;
+    /*width:100%;*/
+    height: 40px;
+
+}
+h1{
+   padding-right: 10px;
+}
+.brand{
+    display: flex;
+    
+}
+
+ul {
+    display: flex;
+    text-align: center;
+    
+
+}
+
+li {
+    padding-right: 40px;
+    list-style: none;
+}
+
+.signup-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 40px;
+    color: #DD4A48;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 4px;
+}
