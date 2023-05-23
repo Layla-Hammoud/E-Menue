@@ -21,25 +21,23 @@ nav {
     background-color: #DD4A48;
     /*width:100%;*/
     height: 40px;
-
 }
+
 h1{
    padding-right: 10px;
 }
 .brand{
-    display: flex;
-    
+    display: flex;   
 }
 
 ul {
     display: flex;
     text-align: center;
-    
-
-}
+    }
 
 li {
-    padding-right: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
     list-style: none;
 }
 
@@ -47,11 +45,67 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90px;
-    height: 40px;
+    width: 80px;
+    height: 35px;
     color: #DD4A48;
     text-align: center;
     cursor: pointer;
     background-color: white;
     border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.signup-button:hover{
+    scale: 1.05;
+}
+
+a{
+    color:#F5EEDC;
+    text-decoration: none;
+}
+
+.Nav-item:hover{
+   scale:1.1;
+}
+
+.mobile-menu-icon{
+    display:none;
+}
+@media screen and (max-width:800px) {
+  .nav-links{
+    display:none;
+  }
+  .mobile-menu-icon{
+    display: block;
+    width:35px;
+    height:35px;
+    font-size: 30px;
+    color: #F5EEDC;
+    border:none;
+    top:15px;
+    right:15px;
+  }  
+  .nav-links-mobile{
+   position:absolute;
+   display:block;
+   list-style: none; 
+   background-color: #DD4A48;
+   width: 100%;
+   left:0;
+   top:64px;
+   transition: all 0.3s ease;
+  }
+  .mobile-item{
+    color:#F5EEDC;
+    text-align: center;
+    padding: 32px;
+    width:100%;
+    transition: all 0.5s ease;
+
+  }
+  .signup-button-mobile{
+    padding-bottom: 32px;
+    background-color: aqua;
+  }
+ 
 }
