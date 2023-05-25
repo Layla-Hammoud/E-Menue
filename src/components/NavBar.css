@@ -4,13 +4,14 @@ html {
     margin: 0;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
+
 }
 
 body {
     min-height: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
-
 nav {
     color: #F5EEDC;
     padding: 20px 40px;
@@ -19,8 +20,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: #DD4A48;
-    /*width:100%;*/
     height: 40px;
+    text-align: center;
 }
 
 h1{
@@ -32,7 +33,7 @@ h1{
 
 ul {
     display: flex;
-    text-align: center;
+    align-items:center;
     }
 
 li {
@@ -72,6 +73,7 @@ a{
     display:none;
 }
 @media screen and (max-width:800px) {
+
   .nav-links{
     display:none;
   }
@@ -87,25 +89,28 @@ a{
   }  
   .nav-links-mobile{
    position:absolute;
+   padding:30px;
    display:block;
    list-style: none; 
    background-color: #DD4A48;
-   width: 100%;
+   width:85vw;
    left:0;
    top:64px;
    transition: all 0.3s ease;
+   
   }
   .mobile-item{
     color:#F5EEDC;
     text-align: center;
-    padding: 32px;
-    width:100%;
     transition: all 0.5s ease;
-
+    margin:30px
   }
-  .signup-button-mobile{
-    padding-bottom: 32px;
-    background-color: aqua;
+  .brand{
+    font-size:small;
   }
+  .mobile-menu-icon{
+    width:25px;
+    height: 25px;
+}
  
 }
