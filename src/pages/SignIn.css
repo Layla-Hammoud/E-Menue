@@ -1,0 +1,78 @@
+
+.main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.image-container{
+    flex-basis:40%;
+    height: 100%;
+    background-image: url("./restaurant.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.form-container{
+    display:flex;
+    align-items: flex-end;
+    flex-direction: column;
+    /*background-color: aquamarine;*/
+    padding: 100px;
+    flex: 1 0 60%;
+}
+h2{
+    font-size: 30px;
+}
+.new-user{
+    color: #878787;
+}
+.sign-up-link{
+    color:#DD4A48;
+}
+.form-input{
+    width: 80%;
+    height: 45px;
+    border: none;
+    background-color:#F5EEDC;
+    border-radius: 5px;
+    margin-top:5px ;
+}
+.form-group{
+    color: #878787;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin-top: 50px;
+}
+
+.submit-button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    align-self: center;
+    border-radius: 50px;
+    padding: 15px 70px;
+    background-color: #ECB390;
+    color: white;
+}
+.submit-button:hover{
+    background-color: #DD4A48;
+}
+.google-button{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color:#F5EEDC;
+    width: 80%;
+    height: 50px;
+    text-align: center;
+}
+.google-icon{
+    width: 35px;
+    height: 35px;
+    flex-basis: 30%;
+}
+.or-line{
+    padding-left:38% ;
+    color: #878787;
+}

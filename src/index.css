@@ -1,11 +1,14 @@
-html {
-  min-height: 100%;
+body {
+  min-height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
   box-sizing: border-box;
 
 }
-
+#root {
+  max-width: 1280px;
+  height: 753.60px;
+}
 
 /*:root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
