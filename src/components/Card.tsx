@@ -8,19 +8,22 @@ function Card() {
     const [isAddedToFavorite,setIsAddedToFavorite]=useState<Boolean>(false);
     return (
         <>
-        <div className="card">
-            <div><img className="product-image" src={Pizza}/></div>
-            <p className="text-card">Brand Name</p>
-            <p className="text-card">description</p>
-            <p className="text-card">price</p>
-            <div className="icon-group">
-                <div>
-                   <img className="icon" src={isAddedToFavorite? FillHeartIcon : HeartIcon} onClick={()=>setIsAddedToFavorite(!isAddedToFavorite)}/>
-                </div>
-                <div>
-                    <img className="icon" src={ShoppingIcon}/>
+        <div className="container">
+            <div className="card">
+                <div><img className="product-image" src={Pizza}/></div>
+                <p className="text-card">Brand Name</p>
+                <p className="text-card">description</p>
+                <p className="text-card">price</p>
+                <div className="icon-group">
+                    <div>
+                    <img className="icon" src={isAddedToFavorite? FillHeartIcon : HeartIcon} onClick={()=>setIsAddedToFavorite(!isAddedToFavorite)}/>
+                    </div>
+                    <div>
+                        <img className="icon" src={ShoppingIcon}/>
+                    </div>
                 </div>
             </div>
+            
         </div>
         </>
     )
