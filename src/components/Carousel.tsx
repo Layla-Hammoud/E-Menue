@@ -3,13 +3,27 @@ import './Carousel.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+function Arrow(props:any) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "black" }}
+        onClick={onClick}
+      />
+    );
+  }
+
 function Carousel() {
     var settings = {
         dots: true,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 2,
+        nextArrow: <Arrow />,
+        prevArrow: <Arrow />,
         initialSlide: 0,
         responsive: [
             {
@@ -18,7 +32,8 @@ function Carousel() {
                     slidesToShow: 2,
                     slidesToScroll: 2,
                     infinite: true,
-                    dots: true
+                    arrows: false,
+
                 }
             },
             {
@@ -26,7 +41,9 @@ function Carousel() {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    initialSlide: 2
+                    initialSlide: 2,
+                    infinite: true,
+                    arrows: false,
                 }
             },
         ]
