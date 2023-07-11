@@ -16,8 +16,7 @@
     display:flex;
     align-items: flex-end;
     flex-direction: column;
-    /*background-color: aquamarine;*/
-    padding: 100px;
+    padding: 56px;
     flex: 1 0 60%;
 }
 h2{
@@ -35,7 +34,8 @@ h2{
     border: none;
     background-color:#F5EEDC;
     border-radius: 5px;
-    margin-top:5px ;
+    margin-top:5px;
+    padding-left: 5px;
 }
 .form-group{
     color: #878787;
@@ -49,7 +49,7 @@ h2{
     width: 200px;
     height: 50px;
     border: none;
-    align-self: center;
+    justify-self: center;
     border-radius: 50px;
     padding: 15px 70px;
     background-color: #ECB390;
@@ -75,4 +75,42 @@ h2{
 .or-line{
     padding-left:38% ;
     color: #878787;
+}
+@media screen and (max-width:1200px) {
+    .main{
+        color:white;
+    }  
+    .new-user{
+        color: white;
+    }
+    h2{
+        line-height: 1.4em;
+    }
+    .sign-up-link{
+        color:red;
+    } 
+ .image-container{
+    background-image: url("./restaurant.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: fixed;
+    background-repeat: no-repeat;
+    filter: blur(6px);
+    z-index: 1;
+ }
+.form-container{
+    z-index: 2;
+    flex-basis: 100%;
+    align-items: center;
+    height: 100%;
+}
+.form-group{
+    width:100%
+}
+
+.submit-button{
+    width: 80%;
+    
+}
 }

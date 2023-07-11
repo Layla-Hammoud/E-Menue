@@ -22,6 +22,7 @@ function Card() {
                         <img className="icon" src={ShoppingIcon}/>
                     </div>
                 </div>
+                
             </div>
             
         </div>
