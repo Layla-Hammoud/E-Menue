@@ -96,19 +96,26 @@ h2{
     background-size: cover;
     position: fixed;
     background-repeat: no-repeat;
-    filter: blur(6px);
+    filter: blur(10px);
     z-index: 1;
  }
 .form-container{
     z-index: 2;
     flex-basis: 100%;
     align-items: center;
+
     height: 100%;
 }
 .form-group{
-    width:100%
+    width:100%;
+    color: white;
 }
-
+.google-button{
+    color:#878787;
+}
+.submit-button{
+    background-color: #DD4A48;
+}
 .submit-button{
     width: 80%;
     
